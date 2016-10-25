@@ -1,7 +1,9 @@
 <aside id="sidebar" <% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
-  <% theme.widgets.forEach(function(widget){ %>
-    <%- partial('_widget/' + widget) %>
-  <% }) %>>
+  <% if (theme.widgets) { %>
+    <% theme.widgets.forEach(function(widget){ %>
+      <%- partial('_widget/' + widget) %>
+    <% }) %>>
+  <% } %>
   <div class="about">
     <div class="logo">
       <svg width="94px" height="80px" viewBox="53 0 94 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
