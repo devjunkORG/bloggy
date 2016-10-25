@@ -1,5 +1,35 @@
-<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+<aside id="sidebar" <% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
-  <% }) %>
+  <% }) %>>
+  <div class="about">
+    <div class="logo">
+      <svg width="94px" height="80px" viewBox="53 0 94 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <path d="M122.884333,0 L99.9677129,39.6390019 L77.0510931,0 L61.4644713,0 L53,12.2842297 L92.2252377,80 L107.709545,80 L146.934782,12.3871881 L138.367353,0 L122.884333,0 Z M124.638487,2.78695645 L135.06496,2.78695645 L92.9478773,75.561204 L57.2315922,13.8324673 L67.7610238,13.8324673 L93.0508357,57.3941861 L124.638487,2.78695645 Z M63.0120654,2.78695645 L73.9546178,2.78695645 L68.277103,11.0455109 L57.3345506,11.0455109 L63.0120654,2.78695645 Z M137.748315,4.1292772 L143.528788,12.3871881 L105.954103,77.213687 L95.4259584,77.213687 L137.748315,4.1292772 Z M70.5479802,12.8003089 L76.2254951,4.54239797 L98.2129149,42.5295603 L93.0508357,51.5101108 L70.5479802,12.8003089 Z" id="Page-1" stroke="none" fill-opacity="0.597939312" fill="#92B6DD" fill-rule="evenodd"></path>
+      </svg>
+    </div>
+    <h1>Welcome to my little part of the web.</h1>
+    <div class="information">
+      <p>
+        My name is Vicente and I code things.
+      </p>
+      <p>
+        I work as a developer at <a href="http://www.smartboxtv.com" target="_blank">Smartbox TV</a>
+        and I like the Internet, music, and salty food.
+      </p>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="http://twitter.com/devjunk" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://github.com/devjunkORG" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="http://stackoverflow.com/users/2069813/devjunk" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+      </ul>
+    </div>
+    <small>
+      2016
+    </small>
+  </div>
 </aside>
